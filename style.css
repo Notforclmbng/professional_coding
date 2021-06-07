@@ -1,0 +1,208 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+}
+
+.header {
+    background-color: #222;
+    padding-top: 18px;
+    padding-bottom: 18px;
+}
+.container {
+    margin: 0 calc(50% - 570px);
+    /* outline: 1px solid red; */
+}
+.header__wrap {
+    display: flex;
+    justify-content: space-between;
+}
+.header__left {
+    width: 111px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header__right {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header__right :last-child {
+    margin-right:10px;
+}
+.header__right :not(:last-child) {
+    margin-right:33px;
+}
+.title {
+    height: 100vh;
+    background-color: #F1E4E6;
+    background-image: url(img/title.png);
+    background-repeat: no-repeat;
+    background-position: 175px bottom;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.title__content {
+    max-width: 50%;
+    display: flex;
+    justify-content: center;
+    }
+
+h1 {
+    max-width: 405px;
+    border-left: 12px solid #F16D7F;
+    padding-left: 16px;
+    padding-right: 82px;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 38px;
+    color: #222222;
+}
+h3 {
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 29px;
+    text-align: center;
+}
+h2 {
+    font-size: 30px;
+    line-height: 36px;
+    color: #222222;
+    text-align: center;
+    padding-bottom: 6px;
+}
+h4 {
+    font-size: 13px;
+    line-height: 16px;
+    color: #000000;
+}
+p {
+    font-size: 16px;
+    line-height: 19px;
+}
+.big {
+    font-weight: 900;
+    font-size: 48px;
+    line-height: 58px;
+}
+.red {
+    color: #F16D7F;
+}
+.white {
+    color: #ffffff;
+    text-align: center;
+}
+.directory {
+    margin-top: 65px;
+    margin-bottom: 96px;
+}
+.directory__top {
+    display: flex;
+}
+.directory__card_1 {
+    background-image: linear-gradient(to right, rgba(33, 22, 22, 0.7), rgba(33, 22, 22, 0.7)), url(img/card_1.jpg);
+}
+.directory__card_2 {
+    background-image: linear-gradient(to right, rgba(33, 22, 22, 0.7), rgba(33, 22, 22, 0.7)), url(img/card_2.jpg);
+}
+.directory__card_3 {
+    background-image: linear-gradient(to right, rgba(33, 22, 22, 0.7), rgba(33, 22, 22, 0.7)), url(img/card_3.jpg);
+}
+.directory__card_4 {
+    background-image: linear-gradient(to right, rgba(33, 22, 22, 0.7), rgba(33, 22, 22, 0.7)), url(img/card_4.jpg);
+}
+.card_content {
+    padding-top: 105px;
+    padding-bottom: 105px;
+}
+.directory__card {
+    width: 377px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 30px;
+}
+.directory__card_2 {
+    margin-left: 30px;
+    margin-right: 30px;
+}
+.directory__bottom {
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.featured {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 95px;
+}
+.featured__description {
+    font-size: 14px;
+    line-height: 17px;
+    color: #9F9F9F;
+}
+.featured__content {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 48px;
+    padding-bottom: 18px;
+}
+.featured__card {
+    width: 360px;
+    background: #F8F8F8;
+    margin-bottom: 30px;
+}
+.featured_card__content {
+    padding: 24px 28px 20px 16px;
+}
+.featured_card__text {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+    color: #5D5D5D;
+    margin-top: 12px;
+    margin-bottom: 18px;
+}
+.middle_card {
+    margin-left: 30px;
+    margin-right: 30px;
+}
+.link {
+    text-decoration: none;
+}
+.featured__link {
+    border: 1px solid red;
+    padding: 14px 39px;
+    margin: 0 auto;
+}
+.advantages {
+    background-color: #222224;
+    padding-top: 104px;
+    padding-bottom: 104px;
+}
+.advantages__content {
+    display: flex;
+}
+.advantages__card {
+    width: 360px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.advantages__heading {
+    font-size: 19.96px;
+    line-height: 24px;
+    color: #FBFBFB;
+    margin-top: 19px;
+    margin-bottom: 16px;
+}
+.advantages__text {
+    font-weight: 300;
+    font-size: 13.972px;
+    line-height: 17px;
+    color: #FBFBFB;
+}
+.subscribe {
+    background-image: url(img/subscribe.jpg);
+}
