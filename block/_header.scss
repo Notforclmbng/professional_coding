@@ -1,0 +1,40 @@
+.header {
+    background-color: $mainColorDark;
+    padding-top: 18px;
+    padding-bottom: 18px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+        &__wrap {
+            display: flex;
+            justify-content: space-between;
+        }
+        &__left {
+            width: 111px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        &__right {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__icon {
+        transition: 0.5s;
+        cursor: pointer;
+        &-indent {
+            margin-right:33px;
+        }
+            &:hover path {
+                fill: $colorRed;
+                transition: 0.5s;
+            }
+        &-last {
+            margin-right:10px;
+        }
+    }
+    
+}
