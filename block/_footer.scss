@@ -1,42 +1,45 @@
 @import '../module/colors';
 
 .footer {
-    background-color: $mainColorDark;
+    background-color: $main-dark;
+
     &__wrap {
         display: flex;
         justify-content: space-between;
     }
+    
     &__left {
         display: flex;
         align-items: center;
         margin-left: 5px;
+
+        .addText {
+            color: $main-light;
+            margin-right: 10px;
+        }
     }
-    &__text {
-        font-size: 16px;
-        line-height: 19px;
-        color: $colorWhite;
-        margin-right: 10px;
-    }
+
     &__right {
         margin: 24px 0px;
         display: flex;
     }
+
     &__icon {
         width: 32px;
-            height: 32px;
+        height: 32px;
         margin-left: 7px;
-        fill: $mainColorDark;
+        fill: $main-dark;
         padding: 8px;
-        background-color: $colorWhite;
+        background-color: $main-light;
 
         &path {
-            fill: $mainColorDark;
+            fill: $main-dark;
             
         }
 
         &:hover {
-            background-color: $colorRed;
-            fill: $colorWhite;
+            background-color: $main-accent;
+            fill: $main-light;
         }
     }
 }
