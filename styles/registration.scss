@@ -1,0 +1,176 @@
+@import '../module/colors';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+.wrapper {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.container {
+    margin: 0 calc(50% - 570px);
+}
+
+@import '../block/header';
+
+@import '../block/pageTitle';
+
+
+
+@import '../block/subscribe';
+
+@import '../block/footer';
+
+// .butt {
+//     background-color: $colorRed;
+// }
+
+.registation {
+    display: flex;
+    padding-top: 64px;
+    padding-bottom: 96px;
+    justify-content: space-between;
+
+    .form {
+        max-width: 360px;
+
+        &__heading {
+            font-weight: 300;
+            font-size: 16px;
+            line-height: 19px;
+        }
+
+        &__item {
+            margin-top: 20px;
+            background-color: $colorWhite;
+            border: none;
+            outline: 1px solid #A4A4A4;
+            color: $mainColorDark;
+
+            &::-webkit-input-placeholder {
+                font-weight: 300;
+                font-size: 13px;
+                line-height: 16px;
+                color: #B1B1B1;
+            }
+        }
+
+        &__field {
+            width: 360px;
+            height: 45px;
+            align-items: center;
+            padding-left: 15px;
+            font-weight: 300;
+            font-size: 13px;
+            line-height: 16px;
+
+            &:-webkit-autofill:focus {
+                -webkit-box-shadow: 0 0 0px 1000px #ffffff inset;
+              }
+        }
+
+        &__sex {
+            margin-top: 33px;
+            margin-bottom: 35px;
+        }
+
+        &__label {
+            margin-left: 10px;
+            margin-right: 20px;
+            font-weight: 300;
+            font-size: 11px;
+            line-height: 13px;
+        }
+
+        &__text {
+            margin-top: 15px;
+            font-weight: 300;
+            font-size: 13px;
+            line-height: 16px;
+            color: #B1B1B1;
+        }
+
+        &__button {
+            cursor: pointer;
+            padding: 16px 66px 16px 29px;
+            background-color: $colorRed;
+            color: $colorWhite;
+            border: none;
+            margin-top: 39px;
+            transition: 0.5s;
+            
+
+            background: linear-gradient(-45deg, #F16D7F, #FCBAC3, #F16D7F, #FCBAC3);
+            background-size: 400% 400%;
+            animation: gradient 15s ease infinite;
+        }
+
+            @keyframes gradient {
+                0% {
+                    background-position: 0% 50%;
+                }
+                50% {
+                    background-position: 100% 50%;
+                }
+                100% {
+                    background-position: 0% 50%;
+                }
+            }
+
+            &__button-box:hover .form__button {
+                border-radius: 25px;
+                background-color: $colorRed;
+                animation: none;
+                transition: 0.5s;
+            }
+
+        &__button-img {
+            margin-left: -50px;
+            cursor: pointer;
+
+            & path {
+                fill: $colorWhite;
+            }
+        }        
+    }
+
+    .perks {
+        max-width: 652px;
+        width: 100%;
+
+        &__heading {
+            font-weight: 300;
+            font-size: 24px;
+            line-height: 29px;
+            margin-bottom: 22px;
+        }
+
+        &__text {
+            font-weight: 300;
+            font-size: 24px;
+            line-height: 29px;
+            margin-bottom: 21px;
+        }
+        
+        &__list {
+            list-style-position: inside;        
+            list-style-image: url(../img/checkMark.svg);
+        }
+        
+        &__item {
+            margin-bottom: 16px;
+
+            & span {
+                padding-left: 22px;
+                font-weight: 300;
+                font-size: 24px;
+                line-height: 29px;
+            }
+        }
+    }
+}
