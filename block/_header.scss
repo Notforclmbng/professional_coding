@@ -1,5 +1,7 @@
+@import '../module/colors';
+
 .header {
-    background-color: $mainColorDark;
+    background-color: $main-dark;
     padding-top: 18px;
     padding-bottom: 18px;
     position: fixed;
@@ -29,7 +31,7 @@
             margin-right:33px;
         }
             &:hover path {
-                fill: $colorRed;
+                fill: $main-accent;
                 transition: 0.5s;
             }
         &-last {
