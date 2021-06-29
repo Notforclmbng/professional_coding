@@ -1,0 +1,248 @@
+@import '../module/general';
+
+@import '../module/colors';
+
+@import '../module/font';
+
+@import '../block/header';
+
+@import '../block/subscribe';
+
+@import '../block/footer';
+
+.title {
+    background-color: $background-light;
+
+    &__wrap {
+        height: 100vh;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        background-image: url(../img/title.png);
+        background-repeat: no-repeat;
+        background-position: -222px bottom;
+        }
+
+    &__heading {
+        max-width: 405px;
+        border-left: 12px solid $main-accent;
+        padding-left: 16px;
+        margin-right: 5%;
+
+        &--brand {
+            font-weight: 900;
+            font-size: 48px;
+            line-height: 58px;
+        }
+
+        &--color {
+            color: $main-accent;
+        }
+    }
+}
+
+.category {
+    margin-top: 65px;
+    margin-bottom: 96px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    &__card {
+        width: 31.5%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin-bottom: 30px;
+        padding-top: 105px;
+        padding-bottom: 105px;
+
+        &:last-child {
+            width: 100%;
+            padding-top: 65px;
+            padding-bottom: 65px;
+        }
+
+        &--women {
+            background-image: linear-gradient(rgba(33, 22, 22, 0.7), rgba(33, 22, 22, 0.7)), url(../img/card_1.jpg);
+        }
+
+        &--men {
+            background-image: linear-gradient(rgba(33, 22, 22, 0.7), rgba(33, 22, 22, 0.7)), url(../img/card_2.jpg);
+        }
+
+        &--kids {
+            background-image: linear-gradient(rgba(33, 22, 22, 0.7), rgba(33, 22, 22, 0.7)), url(../img/card_3.jpg);
+        }
+
+        &--accs {
+            background-image: linear-gradient(rgba(33, 22, 22, 0.7), rgba(33, 22, 22, 0.7)), url(../img/card_4.jpg);
+        }
+    }
+
+    &__text {
+        text-align: center;
+        color: $main-light;
+    }
+
+    &__heading {
+        color: $main-accent;
+    }
+}
+
+.featured {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 95px;
+
+    &__text {
+        color: $greyscale-light;
+        padding-top: 6px;
+    }
+
+    &__content {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding-top: 48px;
+        padding-bottom: 18px;
+
+        .card {
+            width: 360px;
+            background: $card-background;
+            margin-bottom: 30px;
+            position: relative;
+            transition: 0.5s;
+        
+            &__content {
+                padding: 22px 16px;
+            }
+
+            &__heading {
+                color: $main-dark;
+            }
+        
+            &__text {
+                color: $greyscale-normal;
+                margin-top: 12px;
+                margin-bottom: 18px;
+            }
+
+            &__price {
+                color: $main-accent;
+            }
+        
+            &__overlay {
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                height: 420px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: rgba(33, 22, 22, 0.7);
+                opacity: 0;
+                transition: 0.5s;
+        
+                &_button {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    border-width: 0px;
+                    background-color: transparent;
+                    outline: 1px solid $main-light;
+                    padding: 10px 15px;
+                    
+                }
+        
+                &_icon {
+                    margin-right: 11px;
+                }
+        
+                &_text {
+                    color: $main-light;
+                }
+        
+                &_button:hover {
+                    outline: 1px solid $main-accent;
+                    cursor: pointer;
+        
+                    & path {
+                        fill: $main-accent;
+                    }
+        
+                    & .card__overlay_text {
+                        color: $main-accent;
+                    }
+                }
+            }
+        
+            &:hover {
+                box-shadow: 0px 5px 8px 0px $shadow-dark;
+        
+                & .card__overlay {
+                    opacity: 1;
+                }
+            }
+        }
+    }
+
+    &__button {
+        border: 1px solid $main-accent;
+        padding: 14px 39px;
+        color: $main-accent;
+
+        &:hover {
+            border: 1px solid $main-accent;
+            color: $main-light;
+            background-color: $main-accent;
+        }
+    }
+
+}
+
+.advantages {
+    background-color: $background-dark;
+    padding-top: 104px;
+    padding-bottom: 104px;
+
+    &__content {
+        display: flex;
+    }
+
+    &__block {
+        width: 360px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        &_heading {
+            color: $main-light;
+            text-align: center;
+            margin-top: 19px;
+            margin-bottom: 16px;
+        }
+
+        &_text {
+            color: $main-light;
+            text-align: center;
+        }
+    }
+}
+
+@media (max-width: 1172px) {
+    .featured__content {
+        justify-content: space-around;
+    }
+
+    .advantages__content {
+            flex-direction: column;
+            align-items: center;
+        }
+
+    .advantages__block {
+        margin-bottom: 48px;
+    }
+
+}
