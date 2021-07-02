@@ -1,6 +1,6 @@
 .pageTitle {
     margin-top: 77px;
-    background-color: #F1E4E6;
+    background-color: $background-light;
     padding-top: 50px;
     padding-bottom: 50px;
 
@@ -11,6 +11,41 @@
         
         .heading {
             color: $main-accent;
+        }
+    }
+}
+
+.breadcrumb {
+    &__list {
+        display: flex;
+        list-style-type: none;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    &__item {
+        &::after {
+            content: "/";
+            color: $greyscale-dark;
+            margin-left: 5px;
+            margin-right: 5px;
+        }
+
+        &--active {
+            font-weight: bold;
+            color: $main-accent;
+
+            &::after {
+                content: none;
+            }
+        }
+    
+        &__link {
+            color: $greyscale-dark;
+
+            &:hover {
+                text-decoration-line: underline;
+            }
         }
     }
 }
