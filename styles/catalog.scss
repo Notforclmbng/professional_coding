@@ -1,0 +1,137 @@
+@import '../module/general';
+
+@import '../module/colors';
+
+@import '../module/font';
+
+@import '../block/header';
+
+@import '../block/pageTitle';
+
+@import '../block/cardblock';
+
+@import '../block/advantages';
+
+@import '../block/subscribe';
+
+@import '../block/footer';
+
+
+.filters {
+    display: flex;
+    margin-top: 51px;
+    margin-bottom: 14px;
+    justify-content: flex-start;
+    
+    &__left {
+        width: 360px;
+        position: relative;
+    }
+
+    &__main {
+        position: absolute;
+        z-index: 1;
+
+        &[open] {
+            background-color: #FFFFFF;
+            box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+            color: #F16D7F;
+
+            & .filters__icon path {
+                fill: #F16D7F;
+            }
+        }
+    }
+
+    &__icon {
+        margin-left: 10px;
+    }
+
+    &__box { 
+        &:last-child {
+            margin-bottom: 24px;
+        }
+    }
+
+    &__group {
+        width: 328px;
+        height: 37px;
+        font-weight: 400;
+        color: #6F6E6E;
+        margin-top: 8px;
+        margin-bottom: 12px;
+        border-left: 5px solid #F16D7F;
+        border-bottom: 1px solid #EBEBEB;
+        display: flex;
+        align-items: center;
+        padding-left: 11px;
+
+        &--active {
+            color: $main-accent;
+        }
+    }
+
+    &__link {
+        margin-top: 11px;
+        margin-left: 34px;
+        font-weight: 400;
+        color: #6F6E6E;
+        display: block;
+    }
+}
+
+summary {
+    display: flex;
+    align-items: center;
+    margin: 16px;
+
+    & ::-webkit-details-marker {
+        display: none;
+    }
+
+}
+
+.sort {
+    display: flex;
+    position: relative;
+
+    &__name {
+        font-weight: 400;
+    }
+
+    &__icon {
+        margin-left: 10px;
+    }
+
+    &__content {
+        position: absolute;
+        background-color: #FFFFFF;
+        display: flex;
+        flex-direction: column;
+        z-index: 1;
+        width: 80px;
+        box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+    }
+
+    &__checkbox {
+        margin: 8px 10px 10px 10px;
+    }
+}
+
+.featured {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 95px;
+
+}
+
+.pagination {
+    display: flex;
+    list-style-type: none;
+    border: 1px solid #EBEBEB;
+    padding: 15px 16px;
+}
+.page {
+    margin-right: 40px;
+}
