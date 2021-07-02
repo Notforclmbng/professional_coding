@@ -38,5 +38,38 @@
             margin-right:10px;
         }
     }
-    
+}
+
+.dropdownMenu {
+    position: absolute;
+    z-index: 2;
+    top: 77px;
+    right: 0;
+    height: 100vh;
+    background-color: $main-light;
+    display: flex;
+    flex-direction: column;
+    padding-top: 16px;
+    padding-right: 16px;
+    padding-left: 34px;
+    width: 14.5%;
+
+    &__exit {
+        display: flex;
+        justify-content: flex-end;
+        margin-bottom: 8px;
+    }
+
+    &__name {
+        font-weight: bold;
+    }
+
+    &__category {
+        margin-bottom: 20px;
+        list-style-type: none;
+
+        &:first-child {
+            margin-top: 24px;
+        }
+    }
 }
