@@ -6,6 +6,10 @@
 
 @import '../block/header';
 
+@import '../block/cardblock';
+
+@import '../block/advantages';
+
 @import '../block/subscribe';
 
 @import '../block/footer';
@@ -100,94 +104,6 @@
         padding-top: 6px;
     }
 
-    &__content {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        padding-top: 48px;
-        padding-bottom: 18px;
-
-        .card {
-            width: 360px;
-            background: $card-background;
-            margin-bottom: 30px;
-            position: relative;
-            transition: 0.5s;
-        
-            &__content {
-                padding: 22px 16px;
-            }
-
-            &__heading {
-                color: $main-dark;
-            }
-        
-            &__text {
-                color: $greyscale-normal;
-                margin-top: 12px;
-                margin-bottom: 18px;
-            }
-
-            &__price {
-                color: $main-accent;
-            }
-        
-            &__overlay {
-                position: absolute;
-                top: 0;
-                left: 0;
-                right: 0;
-                height: 420px;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                background-color: rgba(33, 22, 22, 0.7);
-                opacity: 0;
-                transition: 0.5s;
-        
-                &_button {
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    border-width: 0px;
-                    background-color: transparent;
-                    outline: 1px solid $main-light;
-                    padding: 10px 15px;
-                    
-                }
-        
-                &_icon {
-                    margin-right: 11px;
-                }
-        
-                &_text {
-                    color: $main-light;
-                }
-        
-                &_button:hover {
-                    outline: 1px solid $main-accent;
-                    cursor: pointer;
-        
-                    & path {
-                        fill: $main-accent;
-                    }
-        
-                    & .card__overlay_text {
-                        color: $main-accent;
-                    }
-                }
-            }
-        
-            &:hover {
-                box-shadow: 0px 5px 8px 0px $shadow-dark;
-        
-                & .card__overlay {
-                    opacity: 1;
-                }
-            }
-        }
-    }
-
     &__button {
         border: 1px solid $main-accent;
         padding: 14px 39px;
@@ -197,36 +113,6 @@
             border: 1px solid $main-accent;
             color: $main-light;
             background-color: $main-accent;
-        }
-    }
-
-}
-
-.advantages {
-    background-color: $background-dark;
-    padding-top: 104px;
-    padding-bottom: 104px;
-
-    &__content {
-        display: flex;
-    }
-
-    &__block {
-        width: 360px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-
-        &_heading {
-            color: $main-light;
-            text-align: center;
-            margin-top: 19px;
-            margin-bottom: 16px;
-        }
-
-        &_text {
-            color: $main-light;
-            text-align: center;
         }
     }
 }
