@@ -1,0 +1,28 @@
+.advantages {
+    background-color: $background-dark;
+    padding-top: 104px;
+    padding-bottom: 104px;
+
+    &__content {
+        display: flex;
+    }
+
+    &__block {
+        width: 360px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        &_heading {
+            color: $main-light;
+            text-align: center;
+            margin-top: 19px;
+            margin-bottom: 16px;
+        }
+
+        &_text {
+            color: $main-light;
+            text-align: center;
+        }
+    }
+}
