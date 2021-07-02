@@ -143,6 +143,151 @@ h5 {
   margin-right: 10px;
 }
 
+.cardblock {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-top: 48px;
+  padding-bottom: 18px;
+}
+
+.cardblock .card {
+  width: 360px;
+  background: #F8F8F8;
+  margin-bottom: 30px;
+  position: relative;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.cardblock .card__content {
+  padding: 22px 16px;
+}
+
+.cardblock .card__heading {
+  color: #222222;
+}
+
+.cardblock .card__text {
+  color: #6F6E6E;
+  margin-top: 12px;
+  margin-bottom: 18px;
+}
+
+.cardblock .card__price {
+  color: #F16D7F;
+}
+
+.cardblock .card__overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 420px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: rgba(33, 22, 22, 0.7);
+  opacity: 0;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.cardblock .card__overlay_button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-width: 0px;
+  background-color: transparent;
+  outline: 1px solid #fbfbfb;
+  padding: 10px 15px;
+}
+
+.cardblock .card__overlay_icon {
+  margin-right: 11px;
+}
+
+.cardblock .card__overlay_text {
+  color: #fbfbfb;
+}
+
+.cardblock .card__overlay_button:hover {
+  outline: 1px solid #F16D7F;
+  cursor: pointer;
+}
+
+.cardblock .card__overlay_button:hover path {
+  fill: #F16D7F;
+}
+
+.cardblock .card__overlay_button:hover .card__overlay_text {
+  color: #F16D7F;
+}
+
+.cardblock .card:hover {
+  -webkit-box-shadow: 0px 5px 8px 0px #22222238;
+          box-shadow: 0px 5px 8px 0px #22222238;
+}
+
+.cardblock .card:hover .card__overlay {
+  opacity: 1;
+}
+
+.advantages {
+  background-color: #222224;
+  padding-top: 104px;
+  padding-bottom: 104px;
+}
+
+.advantages__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.advantages__block {
+  width: 360px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.advantages__block_heading {
+  color: #fbfbfb;
+  text-align: center;
+  margin-top: 19px;
+  margin-bottom: 16px;
+}
+
+.advantages__block_text {
+  color: #fbfbfb;
+  text-align: center;
+}
+
 .subscribe {
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(244, 244, 244, 0.7)), to(rgba(244, 244, 244, 0.7))), url(../img/subscribe.jpg);
   background-image: linear-gradient(rgba(244, 244, 244, 0.7), rgba(244, 244, 244, 0.7)), url(../img/subscribe.jpg);
@@ -433,113 +578,6 @@ h5 {
   padding-top: 6px;
 }
 
-.featured__content {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  padding-top: 48px;
-  padding-bottom: 18px;
-}
-
-.featured__content .card {
-  width: 360px;
-  background: #F8F8F8;
-  margin-bottom: 30px;
-  position: relative;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-}
-
-.featured__content .card__content {
-  padding: 22px 16px;
-}
-
-.featured__content .card__heading {
-  color: #222222;
-}
-
-.featured__content .card__text {
-  color: #6F6E6E;
-  margin-top: 12px;
-  margin-bottom: 18px;
-}
-
-.featured__content .card__price {
-  color: #F16D7F;
-}
-
-.featured__content .card__overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 420px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  background-color: rgba(33, 22, 22, 0.7);
-  opacity: 0;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-}
-
-.featured__content .card__overlay_button {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  border-width: 0px;
-  background-color: transparent;
-  outline: 1px solid #fbfbfb;
-  padding: 10px 15px;
-}
-
-.featured__content .card__overlay_icon {
-  margin-right: 11px;
-}
-
-.featured__content .card__overlay_text {
-  color: #fbfbfb;
-}
-
-.featured__content .card__overlay_button:hover {
-  outline: 1px solid #F16D7F;
-  cursor: pointer;
-}
-
-.featured__content .card__overlay_button:hover path {
-  fill: #F16D7F;
-}
-
-.featured__content .card__overlay_button:hover .card__overlay_text {
-  color: #F16D7F;
-}
-
-.featured__content .card:hover {
-  -webkit-box-shadow: 0px 5px 8px 0px #22222238;
-          box-shadow: 0px 5px 8px 0px #22222238;
-}
-
-.featured__content .card:hover .card__overlay {
-  opacity: 1;
-}
-
 .featured__button {
   border: 1px solid #F16D7F;
   padding: 14px 39px;
@@ -550,44 +588,6 @@ h5 {
   border: 1px solid #F16D7F;
   color: #fbfbfb;
   background-color: #F16D7F;
-}
-
-.advantages {
-  background-color: #222224;
-  padding-top: 104px;
-  padding-bottom: 104px;
-}
-
-.advantages__content {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.advantages__block {
-  width: 360px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.advantages__block_heading {
-  color: #fbfbfb;
-  text-align: center;
-  margin-top: 19px;
-  margin-bottom: 16px;
-}
-
-.advantages__block_text {
-  color: #fbfbfb;
-  text-align: center;
 }
 
 @media (max-width: 1172px) {
